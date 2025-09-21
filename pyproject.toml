@@ -1,0 +1,17 @@
+[project]
+name = "projectamine"
+version = "0.1.0"
+dependencies = [
+    "pandas==2.3.2",
+    "mypy==1.8.0",
+    "ruff==0.13.0",
+    "pre-commit==4.3.0",
+    "pydantic==2.11.9"  
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
