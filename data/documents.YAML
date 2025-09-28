@@ -1,0 +1,172 @@
+records:
+  - name: John Peek
+    age: 41
+    id: 1
+    salary: 3700
+    working_years:
+      - 1997
+      - 1998
+      - 1999
+      - 2000
+    is_working: false
+    notes:
+      - year: 1997
+        working_months: 5
+        satisfied: false
+      - year: 1998
+        working_months: 7
+        satisfied: false
+    hobbies:
+      - badminton
+      - tennis
+
+  - name: Lina Koor
+    age: 89
+    id: 2
+    salary: 5900
+    working_years:
+      - 1958
+      - 1959
+      - 1970
+    is_working: false
+    notes:
+      - year: 1958
+        working_months: 6
+        satisfied: true
+      - year: 1970
+        working_months: 7
+        satisfied: true
+    hobbies:
+      - classical music
+      - rugby
+
+  - name: Josh Ben
+    age: 35
+    id: 3
+    salary: 5000
+    working_years:
+      - 2014
+      - 2015
+      - 2016
+      - 2017
+      - 2018
+      - 2019
+      - 2020
+    is_working: true
+    notes:
+      - year: 2019
+        working_months: 11
+        satisfied: true
+      - year: 2020
+        working_months: 4
+        satisfied: false
+
+  - name: Joshua Meed
+    age: 44
+    id: 4
+    salary: 2100
+    working_years:
+      - 2005
+      - 2006
+      - 2007
+    is_working: true
+
+  - name: Nea Vonsha
+    age: 38
+    id: 5
+    salary: 6800
+    working_years:
+      - 2021
+      - 2022
+      - 2023
+      - 2024
+      - 2025
+    is_working: true
+    hobbies:
+      - watching tv
+      - shopping
+
+  - name: Bea Anne
+    age: 29
+    id: 6
+    salary: 4800
+    working_years:
+      - 2020
+      - 2022
+      - 2024
+      - 2025
+    is_working: true
+    notes:
+      - year: 2024
+        working_months: 11
+        satisfied: true
+    hobbies:
+      - ballet
+      - street dance
+
+  - name: Vemshi Vinatraajsh
+    age: 25
+    id: 7
+    salary: 5200
+    working_years:
+      - 2019
+      - 2023
+      - 2024
+      - 2025
+    is_working: true
+
+  - name: Sami Miatraaj
+    age: 34
+    id: 8
+    salary: 3400
+    working_years:
+      - 2023
+      - 2025
+    is_working: true
+    notes:
+      - year: 2025
+        working_months: 8
+        satisfied: false
+    hobbies:
+      - running
+      - boxe
+
+  - name: Konrad Leem
+    age: 21
+    id: 9
+    salary: 1400
+    working_years:
+      - 2023
+    is_working: false
+
+  - name: Amelie Van
+    age: 22
+    id: 10
+    salary: 1800
+    working_years:
+      - 2025
+    is_working: true
+    notes:
+      - year: 2025
+        working_months: 4
+        satisfied: false
+
+  - name: Stephan Conre
+    age: 39
+    id: 11
+    salary: 6600
+    working_years:
+      - 2012
+      - 2013
+      - 2014
+      - 2015
+      - 2016
+      - 2019
+      - 2023
+      - 2024
+      - 2025
+    is_working: true
+    notes:
+      - year: 2012
+        working_months: 2
+        satisfied: false

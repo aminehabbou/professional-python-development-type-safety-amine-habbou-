@@ -1,0 +1,12 @@
+name,age,id,salary,working_years,is_working,notes_year,notes_working_months,notes_satisfied,hobbies
+"John Peek",41,1,3700,"1997,1998,1999,2000",false,"1997;1998","5;7","false;false","badminton,tennis"
+"Lina Koor",89,2,5900,"1958,1959,1970",false,"1958;1970","6;7","true;true","classical music,rugby"
+"Josh Ben",35,3,5000,"2014,2015,2016,2017,2018,2019,2020",true,"2019;2020","11;4","true;false",
+"Joshua Meed",44,4,2100,"2005,2006,2007",true,,,,
+"Nea Vonsha",38,5,6800,"2021,2022,2023,2024,2025",true,,,,"watching tv,shopping"
+"Bea Anne",29,6,4800,"2020,2022,2024,2025",true,"2024","11","true","ballet,street dance"
+"Vemshi Vinatraajsh",25,7,5200,"2019,2023,2024,2025",true,,,,
+"Sami Miatraaj",34,8,3400,"2023,2025",true,"2025","8","false","running,boxe"
+"Konrad Leem",21,9,1400,"2023",false,,,,
+"Amelie Van",22,10,1800,"2025",true,"2025","4","false",
+"Stephan Conre",39,11,6600,"2012,2013,2014,2015,2016,2019,2023,2024,2025",true,"2012","2","false",
