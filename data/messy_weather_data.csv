@@ -1,0 +1,30 @@
+date,city,temperature_c,humidity_percent,wind_speed_kmh,condition,pressure_hpa
+2024-01-15,New York,2.5,65,15,Cloudy,1015
+2024-01-15,New York,2.5,65,15,Cloudy,1015
+2024-01-15,LA,18.2,45,8,Sunny,1012
+2024-01-15,Chicago,-3.8,72,22,Snow,1008
+2024-01-15,Chicago,-3.8,72,22,Snow,1008
+2024-01-15,chicago,-3.8,72,22,snow,1008
+2024-01-32,Miami,24.6,58,12,Partly Cloudy,1013
+2024-01-15,Seattle,6.3,81,10,Rain,1009
+2024-01-16,New York,-1.2,68,18,Snow,1014
+2024-01-16,Los Angeles,19.8,42,6,Sunny,1011
+2024-01-16,Chicago,-5.4,75,999,Snow,1007
+2024-01-16,Miami,25.3,55,9,Sunny,1012
+2024-01-16,Seattle,,85,14,Rain,1010
+2024-01-17,New York,4.7,62,12,Partly Cloudy,1016
+2024-01-17,Los Angeles,21.5,38,5,Sunny,1013
+2024-01-17,Chicago,-2.1,70,16,Cloudy,1011
+2024-01-17,Miami,26.8,52,7,Sunny,1014
+2024-01-17,Miami,26.8,52,7,Sunny,1014
+2024-01-17,Seattle,7.9,78,8,Cloudy,1012
+2024-02-30,New York,hot,62,12,Rainy,1015
+2024-01-18,Boston,3.2,-5,20,Cloudy,1010
+2024-01-18,New York,30,165,15,Snow,980
+2024-01-18,New York,2.8,165,15,Snow,980
+2024-01-19,Chicago,-2.5,72,22,Cloudy,950
+2024-01-20,Miami,thirty,58,12,Sunny,1100
+2024-01-15,Toronto,1.5,70,25,Snow,1012
+01/15/2024,New York,3.1,68,14,Cloudy,1013
+2024-01-16,LA,20.1,40,7,Sunny,1012
+2024-01-21,Seattle,8.2,,11,Rain,1011
