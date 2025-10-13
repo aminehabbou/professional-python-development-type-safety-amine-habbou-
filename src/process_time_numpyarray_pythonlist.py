@@ -8,9 +8,7 @@ T = TypeVar("T")
 R = TypeVar("R")
 
 
-# FIXED: Added proper type parameters to Callable
 def measure_time(func: Callable[..., R]) -> Callable[..., R]:
-    # FIXED: Added type annotations for arguments
     def wrapper(*args: Any, **kwargs: Any) -> R:
         start_time = time.perf_counter()
         result = func(*args, **kwargs)
