@@ -216,6 +216,7 @@ dependencies = [
     { name = "pandas-stubs" },
     { name = "pre-commit" },
     { name = "pydantic" },
+    { name = "pymongo-stubs" },
     { name = "pyyaml" },
     { name = "ruff" },
     { name = "types-pyyaml" },
@@ -230,6 +231,7 @@ requires-dist = [
     { name = "pandas-stubs", specifier = ">=2.3.2.250926" },
     { name = "pre-commit", specifier = "==4.3.0" },
     { name = "pydantic", specifier = "==2.11.9" },
+    { name = "pymongo-stubs", specifier = ">=0.2.0" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "ruff", specifier = "==0.13.0" },
     { name = "types-pyyaml", specifier = ">=6.0.12.20250915" },
@@ -276,6 +278,24 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/7d/e09391c2eebeab681df2b74bfe6c43422fffede8dc74187b2b0bf6fd7571/pydantic_core-2.33.2-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:61c18fba8e5e9db3ab908620af374db0ac1baa69f0f32df4f61ae23f15e586ac", size = 1806162, upload-time = "2025-04-23T18:32:20.188Z" },
     { url = "https://files.pythonhosted.org/packages/f1/3d/847b6b1fed9f8ed3bb95a9ad04fbd0b212e832d4f0f50ff4d9ee5a9f15cf/pydantic_core-2.33.2-cp313-cp313t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:95237e53bb015f67b63c91af7518a62a8660376a6a0db19b89acc77a4d6199f5", size = 1981560, upload-time = "2025-04-23T18:32:22.354Z" },
     { url = "https://files.pythonhosted.org/packages/6f/9a/e73262f6c6656262b5fdd723ad90f518f579b7bc8622e43a942eec53c938/pydantic_core-2.33.2-cp313-cp313t-win_amd64.whl", hash = "sha256:c2fc0a768ef76c15ab9238afa6da7f69895bb5d1ee83aeea2e3509af4472d0b9", size = 1935777, upload-time = "2025-04-23T18:32:25.088Z" },
+]
+
+[[package]]
+name = "pymongo"
+version = "3.13.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ec/ff/9b08f29b57384e1f55080d15a12ba4908d93d46cd7fe83c5c562fdcd3400/pymongo-3.13.0.tar.gz", hash = "sha256:e22d6cf5802cd09b674c307cc9e03870b8c37c503ebec3d25b86f2ce8c535dc7", size = 804388, upload-time = "2022-11-01T19:06:29.025Z" }
+
+[[package]]
+name = "pymongo-stubs"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pymongo" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2d/46/82d53c1096768eaf2adf90d8b1f17c88f51b17efe67791b9546af7617503/pymongo-stubs-0.2.0.tar.gz", hash = "sha256:f53d497c8f9d64d9187b8e969184027112234fcef1b99dbc3190bb133d19ee19", size = 27197, upload-time = "2022-01-11T21:21:57.444Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/74/5f1f8d3ddd28155e15b0f034b370c245191abbeea1cf88c2e2f79612a571/pymongo_stubs-0.2.0-py3-none-any.whl", hash = "sha256:4f634211cc15257a9f5e6e69fea69f9322c8a1fb2b81ac0f1dbc88dc6df12066", size = 39512, upload-time = "2022-01-11T21:21:55.807Z" },
 ]
 
 [[package]]

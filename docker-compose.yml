@@ -9,7 +9,7 @@ services:
     volumes:
       - ./data/mariadb:/var/lib/mysql
   
-  mgdb:
+  mongodb:
     image: mongo:7.0
     environment:
       MONGO_INITDB_ROOT_USERNAME: amineh
