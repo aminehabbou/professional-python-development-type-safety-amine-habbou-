@@ -24,3 +24,5 @@ class ScientificArticle(Document):  # type: ignore[misc]
     arxiv_id = StringField()
 
     author = EmbeddedDocumentField(Author)
+
+    text = StringField()
