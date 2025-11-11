@@ -32,6 +32,6 @@ class ScientificArticle(Document):  # type: ignore[misc]
         "indexes": [
             "db_id",
             "arxiv_id",
-            {"fields": ["text"], "default_language": "english"},
+            {"fields": [("text", "text")], "default_language": "english"},
         ],
     }

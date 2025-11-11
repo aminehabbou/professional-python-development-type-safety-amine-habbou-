@@ -20,7 +20,7 @@ def search_text_index(keyword: str) -> List[Dict[str, Union[str, float]]]:
         {"$project": {"arxiv_id": 1, "title": 1, "text_score": 1}},
     ]
 
-    results = list(ScientificArticle.objects.aggregate(*pipeline))
+    results = list(ScientificArticle._get_collection().aggregate(pipeline))
     return results
 
 
