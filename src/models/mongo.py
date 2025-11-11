@@ -27,4 +27,11 @@ class ScientificArticle(Document):  # type: ignore[misc]
 
     text = StringField()
 
-    meta = {"collection": "scientific_articles", "indexes": ["db_id", "arxiv_id"]}
+    meta = {
+        "collection": "scientific_articles",
+        "indexes": [
+            "db_id",
+            "arxiv_id",
+            {"fields": ["text"], "default_language": "english"},
+        ],
+    }

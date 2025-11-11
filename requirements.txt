@@ -9,4 +9,4 @@ sqlalchemy[mypy]==2.0.43
 pymysql==1.1.2
 pymongo==4.15.3
 mongoengine==0.29.1
-pymongo-stubs==0.2.0
+pymupdf4llm==0.0.27
