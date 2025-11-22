@@ -1,37 +1,50 @@
 import os
 
 import numpy as np
+import pandas as pd
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from sklearn.metrics.pairwise import cosine_similarity  # type: ignore
 
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 
 client = genai.Client(api_key=api_key)
 
-results = client.models.embed_content(
-    model="gemini-embedding-001",
-    contents=[
-        "a goal is scored in the net of the opposing team",
-        "the opposing team conceded a goal",
-        "the goal scored was a header",
-        "Football is a game that consists of goals",
-        "Jules kounde is a FC barcelona  football player",
-        "Prague is the capital of Czech Republic",
-    ],
-    config=types.EmbedContentConfig(
-        output_dimensionality=768, task_type="SEMANTIC_SIMILARITY"
-    ),
-)
 
-embeddings_matrix = np.array(
-    [np.array(embedding.values) for embedding in results.embeddings or []]
-)
+def embed_article(
+    article: pd.Series, chunk_size: int = 1000, overlap: int = 200
+) -> pd.Series:
+    text = article.html_content
+    start = 0
+    chunks: list[str] = []
+    while start < len(article.html_content):
+        end = start + chunk_size
+        chunk = text[start:end]
+        if end < len(text):
+            last_period = chunk.rfind(".")
+            if last_period > chunk_size // 2:
+                end = start + last_period + 1
+                chunk = text[start:end]
 
-print(embeddings_matrix)
+        chunks.append(chunk.strip())
+        start = end - overlap
 
-similarity_matrix = cosine_similarity(embeddings_matrix)
+    result = client.models.embed_content(
+        model="gemini-embedding-001",
+        contents=chunks[:2],  # due to quota has been exceeded
+        config=types.EmbedContentConfig(
+            output_dimensionality=768, task_type="SEMANTIC_SIMILARITY"
+        ),
+    )
 
-print(similarity_matrix)
+    embeddings = np.array(
+        [np.array(embedding.values) for embedding in result.embeddings or []]
+    )
+
+    return pd.Series([embeddings], index=["embeddings"])
+
+
+def embed_documents(df: pd.DataFrame) -> pd.DataFrame:
+    df["embeddings"] = df.apply(embed_article, axis=1)
+    return df
